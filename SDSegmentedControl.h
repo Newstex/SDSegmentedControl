@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class SDSegmentView;
+
 // Most inherited UI_APPERANCE_SELECTORs are ignored. You can use the following selectors
 // to customize appearance:
 //  +[SDSegmentedControl appearance]
@@ -25,6 +27,8 @@
 @property (assign, nonatomic) UIEdgeInsets stainEdgeInsets UI_APPEARANCE_SELECTOR;
 
 @property UIScrollView *scrollView;
+
+- (SDSegmentView *)segmentAtIndex:(NSUInteger)index;
 
 @end
 
